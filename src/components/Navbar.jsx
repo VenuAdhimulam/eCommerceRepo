@@ -66,7 +66,7 @@ const Navbar = () => {
           <Language>EN</Language>
           <SeacrhContainer>
             <Input />
-            <Search style={{ color: "gray", fontSize: "14px" }} />
+            <Search style={{ color: "gray", fontSize: "15px" }} />
           </SeacrhContainer>
         </Left>
         <Center>
