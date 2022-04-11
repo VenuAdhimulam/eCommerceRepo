@@ -1,6 +1,5 @@
 import {
   Facebook,
-  Home,
   Instagram,
   Mail,
   Phone,
