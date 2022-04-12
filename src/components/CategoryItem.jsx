@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   flex: 1;
@@ -11,6 +12,10 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  ${mobile({
+    height: "40vh",
+    background: "rgba(255, 255, 255, 0.5)",
+  })};
 `;
 const Info = styled.div`
   position: absolute;
@@ -22,12 +27,19 @@ const Info = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  ${mobile({
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  })};
 `;
 const Title = styled.h1`
   color: white;
   margin-bottom: 20px;
   font-size: 50px;
   font-weight: 800;
+  align-items: center;
+  justify-content: center;
 `;
 const Button = styled.div`
   background: white;
